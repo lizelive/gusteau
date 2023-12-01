@@ -26,7 +26,7 @@ serde_with = { version = "1.10.0", features = ["macros", "json"] }
 
 schemafy = { version = "0.6.0" }
 
-schema_analysis = { version = "0.3.4", features = [
+schema_analysis = { version = "0.5.0", features = [
     #"json_typegen", 
     "schemars_integration",
 ] }

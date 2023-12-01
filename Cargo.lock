@@ -961,6 +961,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "97c9d06878b3a851e8026ef94bf7fef9ba93062cd412601da4d9cf369b1cc62d"
 dependencies = [
  "num-traits",
+]
+
+[[package]]
+name = "ordered-float"
+version = "3.9.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f1e1c390732d15f1d48471625cd92d154e66db2c56645e29a9cd26f4699f72dc"
+dependencies = [
+ "num-traits",
+ "rand 0.8.4",
  "serde",
 ]
 
@@ -1121,6 +1131,7 @@ dependencies = [
  "rand_chacha 0.3.1",
  "rand_core 0.6.3",
  "rand_hc 0.3.1",
+ "serde",
 ]
 
 [[package]]
@@ -1165,6 +1176,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d34f1408f55294453790c48b2f1ebbb1c5b4b7563eb1f418bcfcfdbb06ebb4e7"
 dependencies = [
  "getrandom",
+ "serde",
 ]
 
 [[package]]
@@ -1361,14 +1373,14 @@ dependencies = [
 
 [[package]]
 name = "schema_analysis"
-version = "0.3.4"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9cc718a3fca71b5f1c814ab1743917fff22242ffb5c0d297e16d2611f753156a"
+checksum = "f74f4d68fbba6a34418ab8ae4e7e4516c6badb344a6d7256bd4f375093da68b4"
 dependencies = [
  "downcast-rs",
  "dyn-clonable",
  "once_cell",
- "ordered-float",
+ "ordered-float 3.9.2",
  "regex",
  "schemars",
  "serde",
@@ -1510,7 +1522,7 @@ version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f3a1a3341211875ef120e117ea7fd5228530ae7e7036a779fdc9117be6b3282c"
 dependencies = [
- "ordered-float",
+ "ordered-float 2.8.0",
  "serde",
 ]
 
